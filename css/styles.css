@@ -196,7 +196,7 @@ mark {
   border-radius: 5px;
   font-style: inherit;
 }
-mark.coral { background: var(--coral); color: white; }
+mark.coral { background: rgba(232, 116, 97, 0.18); color: var(--text); }
 mark.mint  { background: var(--mint);  color: var(--forest); }
 mark.sky   { background: var(--sky);   color: var(--text); }
 
@@ -275,7 +275,7 @@ mark.sky   { background: var(--sky);   color: var(--text); }
    13. QUOTE / HIGHLIGHT CARD
    ============================================================ */
 .quote-card {
-  background: var(--sky);
+  background: linear-gradient(145deg, #eef4f8 0%, #dce9f2 100%);
   border-radius: var(--r-card);
   padding: 2.5rem 3rem;
 }
@@ -288,7 +288,7 @@ mark.sky   { background: var(--sky);   color: var(--text); }
 }
 .quote-card .quote-mark {
   font-size: 3.5rem;
-  color: var(--mint);
+  color: #9db8c8;
   line-height: 0.6;
   font-family: var(--serif);
   display: block;
