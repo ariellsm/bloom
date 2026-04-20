@@ -560,7 +560,8 @@ mark.sky   { background: var(--sky);   color: var(--text); }
   text-decoration: none;
   flex-shrink: 0;
 }
-.logo-icon { width: 26px; height: 26px; flex-shrink: 0; }
+.logo-icon  { width: 26px; height: 26px; flex-shrink: 0; }
+.site-logo  { height: 36px; width: auto; display: block; }
 .logo-text  { display: flex; align-items: baseline; }
 .logo-bloom { font-family: var(--sans); font-weight: 700; font-size: 1.05rem; color: var(--forest); letter-spacing: -0.01em; }
 .logo-health{ font-family: var(--serif); font-style: italic; font-weight: 500; font-size: 1.05rem; color: var(--forest); }
