@@ -8,9 +8,6 @@
   <meta property="og:title" content="Bloom Health | Primary Care in Gainesville, FL">
   <meta property="og:description" content="Healthcare that actually centers you. A nurse practitioner-led primary care practice in Gainesville, FL.">
   <meta property="og:type" content="website">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -30,18 +27,18 @@
     <ul class="nav-links">
       <li><a href="index.html" class="active">Home</a></li>
       <li class="has-dropdown">
-          <a href="services.html">Services <span class="dropdown-arrow">▾</span></a>
-          <ul class="nav-dropdown">
-            <li><a href="services.html">All Services</a></li>
-            <li><a href="primary-care.html">Primary Care</a></li>
-            <li><a href="perimenopause.html">Perimenopause &amp; Menopause</a></li>
-            <li><a href="pcos.html">PCOS</a></li>
-            <li><a href="weight-management.html">Weight Management</a></li>
-            <li><a href="lgbtq-care.html">LGBTQ+ Care</a></li>
-            <li><a href="postpartum.html">Postpartum Care</a></li>
-            <li><a href="metabolic-health.html">Metabolic Health</a></li>
-          </ul>
-        </li>
+        <a href="services.html">Services <span class="dropdown-arrow">▾</span></a>
+        <ul class="nav-dropdown">
+          <li><a href="services.html">All Services</a></li>
+          <li><a href="primary-care.html">Primary Care</a></li>
+          <li><a href="perimenopause.html">Perimenopause &amp; Menopause</a></li>
+          <li><a href="pcos.html">PCOS</a></li>
+          <li><a href="weight-management.html">Weight Management</a></li>
+          <li><a href="lgbtq-care.html">LGBTQ+ Care</a></li>
+          <li><a href="postpartum.html">Postpartum Care</a></li>
+          <li><a href="metabolic-health.html">Metabolic Health</a></li>
+        </ul>
+      </li>
       <li><a href="weight-management.html">Weight Loss</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
@@ -76,17 +73,29 @@
      ══════════════════════════════════════════ -->
 <section class="home-hero">
   <div class="home-hero-inner">
-    <div class="hero-left">
-      <span class="pill pill-peach">Accepting Patients</span>
-      <h1 class="hero-headline">Healthcare that <em>actually</em> centers you.</h1>
+
+    <div class="hero-text">
+      <div class="hero-eyebrow">
+        <span class="accepting-dot"></span>
+        <span class="pill-accepting">Accepting Patients</span>
+      </div>
+
+      <h1 class="hero-headline">
+        Healthcare<br>
+        that <em>actually</em><br>
+        centers you.
+      </h1>
+
       <p class="hero-body">A nurse practitioner-led primary care practice in Gainesville, FL. We specialize in hormonal health, LGBTQ+ affirming care, and personalized wellness for every body.</p>
+
       <div class="hero-actions">
         <a href="#" class="btn btn-dark">Book Appointment</a>
         <a href="services.html" class="btn btn-outline">Our Services</a>
       </div>
     </div>
-    <div class="hero-image-wrap">
-      <img src="assets/IMG_2064.webp" alt="Bloom Health practice interior — green velvet couch" style="width:100%; min-height:460px; border-radius:20px; object-fit:cover; display:block;">
+
+    <div class="hero-visual">
+      <img src="assets/IMG_2064.webp" alt="Bloom Health practice interior — green velvet couch" class="hero-image">
       <div class="hero-float-card">
         <div class="float-icon">💚</div>
         <div class="float-card-text">
@@ -95,18 +104,25 @@
         </div>
       </div>
     </div>
+
   </div>
 </section>
 
 <!-- MARQUEE -->
 <div class="marquee-strip" aria-hidden="true">
   <div class="marquee-track">
-    <span>• INCLUSIVE CARE</span><span>• PERSONALIZED WELLNESS</span><span>• BLOOM FOR MORE</span>
-    <span>• INCLUSIVE CARE</span><span>• PERSONALIZED WELLNESS</span><span>• BLOOM FOR MORE</span>
-    <span>• INCLUSIVE CARE</span><span>• PERSONALIZED WELLNESS</span><span>• BLOOM FOR MORE</span>
-    <span>• INCLUSIVE CARE</span><span>• PERSONALIZED WELLNESS</span><span>• BLOOM FOR MORE</span>
-    <span>• INCLUSIVE CARE</span><span>• PERSONALIZED WELLNESS</span><span>• BLOOM FOR MORE</span>
-    <span>• INCLUSIVE CARE</span><span>• PERSONALIZED WELLNESS</span><span>• BLOOM FOR MORE</span>
+    <span>• Inclusive Care</span>
+    <span>• Personalized Wellness</span>
+    <span>• Bloom for More</span>
+    <span>• Inclusive Care</span>
+    <span>• Personalized Wellness</span>
+    <span>• Bloom for More</span>
+    <span>• Inclusive Care</span>
+    <span>• Personalized Wellness</span>
+    <span>• Bloom for More</span>
+    <span>• Inclusive Care</span>
+    <span>• Personalized Wellness</span>
+    <span>• Bloom for More</span>
   </div>
 </div>
 
@@ -114,18 +130,20 @@
      ABOUT TEASER
      ══════════════════════════════════════════ -->
 <section class="home-about">
-  <div class="container">
-    <span class="pill pill-mint">About Bloom</span>
-    <div class="about-grid">
-      <div>
-        <p class="about-left-text">Women-owned, nurse practitioner-led primary care in Gainesville, FL since 2023.</p>
-      </div>
-      <div>
-        <p class="about-big-quote">We reject the one-size-fits-all approach to healthcare—because <em>you deserve better</em>.</p>
-        <p class="about-sub">More than a clinic, we're on a mission to make healthcare feel human again. We see you as a whole person—not a chart, not a number, not a 15-minute appointment slot. That's why we're committed to the personal side of healthcare.</p>
-        <a href="about.html" class="meet-link">Meet Naomi →</a>
-      </div>
+  <div class="about-inner">
+
+    <div class="about-left">
+      <span class="about-left-index">01</span>
+      <span class="section-label">About Bloom</span>
+      <p class="about-left-text">Women-owned, nurse practitioner-led primary care in Gainesville, FL since 2023.</p>
     </div>
+
+    <div class="about-right">
+      <p class="about-pull-quote">We reject the one-size-fits-all approach to healthcare—because <em>you deserve better</em>.</p>
+      <p class="about-sub">More than a clinic, we're on a mission to make healthcare feel human again. We see you as a whole person—not a chart, not a number, not a 15-minute appointment slot. That's why we're committed to the personal side of healthcare.</p>
+      <a href="about.html" class="meet-link">Meet Naomi →</a>
+    </div>
+
   </div>
 </section>
 
@@ -174,22 +192,22 @@
      ══════════════════════════════════════════ -->
 <section class="home-services">
   <div class="container">
-    <div class="services-sec-header">
+
+    <div class="services-header">
       <div>
         <span class="section-label">Our Services</span>
         <h2>What we <em>specialize</em> in</h2>
       </div>
-      <a href="services.html" class="btn btn-outline" style="margin-top:0.5rem;">View Services</a>
+      <a href="services.html" class="btn btn-outline">View All Services</a>
     </div>
+
     <div class="services-grid-home">
-      <!-- Big dark left card -->
-      <a href="services.html" class="svc-card dark" style="justify-content:flex-end; min-height:340px;">
+      <a href="services.html" class="svc-card dark" style="justify-content:flex-end;">
         <div>
-          <h3 style="font-size:1.375rem; margin-bottom:0.75rem;">Hormonal Health</h3>
+          <h3>Hormonal Health</h3>
           <p>Comprehensive hormone management for PCOS, thyroid disorders, perimenopause, menopause, and more.</p>
         </div>
       </a>
-      <!-- Right 2×2 -->
       <div class="services-right-grid">
         <a href="lgbtq-care.html" class="svc-card">
           <img src="assets/starburst-gradient-mint.png" class="svc-card-icon" alt="">
@@ -213,6 +231,7 @@
         </a>
       </div>
     </div>
+
   </div>
 </section>
 
@@ -220,9 +239,15 @@
      FAQ
      ══════════════════════════════════════════ -->
 <section class="home-faq">
-  <div class="container" style="max-width:780px;">
-    <span class="section-label">Common Questions</span>
-    <h2>Common Questions</h2>
+  <div class="container" style="max-width:900px;">
+
+    <div class="faq-header">
+      <div>
+        <span class="section-label">Common Questions</span>
+        <h2>Common <em>Questions</em></h2>
+      </div>
+    </div>
+
     <div class="faq-list">
 
       <div class="faq-item">
@@ -246,7 +271,6 @@
       </div>
 
       <div class="faq-item">
-        <!-- TODO: ariella to finish — needs real insurance answer -->
         <button class="faq-q">Do you accept insurance?<span class="faq-icon">+</span></button>
         <div class="faq-a">Please contact our office at info@heybloomhealth.com or (352) 580-6573 for the most current information about accepted insurance plans and self-pay options. We are happy to help you understand your coverage before your visit.</div>
       </div>
@@ -258,9 +282,9 @@
 <!-- ══════════════════════════════════════════
      CTA
      ══════════════════════════════════════════ -->
-<section class="cta-section cta-peach-cream">
+<section class="cta-section cta-warm-gradient">
   <div class="container">
-    <h2>Ready to meet us?</h2>
+    <h2>Ready to <em>meet us?</em></h2>
     <p>Schedule your first appointment and experience the difference.</p>
     <a href="#" class="btn btn-dark">Book Appointment</a>
   </div>
@@ -271,11 +295,11 @@
   <div class="footer-card">
     <div class="footer-top">
       <div class="footer-brand">
-        <div class="footer-logo logo">
-          <img src="assets/Bloom-logo_white.png" class="site-logo" alt="Bloom Health">
-        </div>
-        <p class="footer-tagline">Are you ready to begin?</p>
-        <a href="#" class="btn btn-mint">Learn more</a>
+        <a href="index.html" class="logo">
+          <img src="assets/Bloom-logo-light.png" class="site-logo" alt="Bloom Health" style="filter: brightness(0) invert(1);">
+        </a>
+        <p class="footer-tagline">Are you ready<br>to begin?</p>
+        <a href="#" class="btn btn-mint">Book Now</a>
       </div>
       <div>
         <span class="footer-col-label">Location</span>
@@ -308,10 +332,10 @@
     <div class="footer-bottom">
       <div class="footer-social">
         <a href="#" aria-label="Instagram">
-          <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01" stroke-linecap="round" stroke-width="2"/></svg>
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01" stroke-linecap="round" stroke-width="2"/></svg>
         </a>
         <a href="#" aria-label="Facebook">
-          <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
         </a>
       </div>
       <p class="footer-fine-print">We provide compassionate, affirming, and accessible healthcare for all. We are committed to serving LGBTQ+ individuals and BIPOC communities. We strive to create a welcoming, and empowering space for all.</p>
