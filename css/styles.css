@@ -1108,7 +1108,7 @@ mark.sky   { background: var(--sky-vivid); color: white; }
    29. SERVICES PAGE
    ============================================================ */
 .services-hero {
-  background: linear-gradient(160deg, var(--teal) 0%, var(--forest) 100%);
+  background: linear-gradient(150deg, #1b5252 0%, var(--forest) 100%);
   padding: var(--section-py) var(--px);
   overflow: hidden;
   position: relative;
@@ -1121,7 +1121,7 @@ mark.sky   { background: var(--sky-vivid); color: white; }
   gap: 3rem;
   align-items: center;
 }
-.services-hero h1 { color: white; }
+.services-hero h1 { color: var(--cream); }
 .services-hero > .services-hero-inner > div:first-child > p {
   color: rgba(255,255,255,0.8);
   max-width: 520px;
@@ -1192,7 +1192,7 @@ mark.sky   { background: var(--sky-vivid); color: white; }
   background: linear-gradient(160deg, #EBF5F8 0%, #D6E8F0 100%);
 }
 .service-hero.bg-teal-dark {
-  background: linear-gradient(160deg, var(--teal) 0%, var(--forest) 100%);
+  background: linear-gradient(150deg, #1b5252 0%, var(--forest) 100%);
 }
 .service-hero.bg-teal-dark h1 { color: white; }
 .service-hero.bg-teal-dark p  { color: rgba(255,255,255,0.8); }
