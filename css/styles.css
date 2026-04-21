@@ -9,14 +9,14 @@
    ============================================================ */
 :root {
   /* Brand colors */
-  --forest:    #0C4A3E;
+  --forest:    #0F3D2E;
   --teal:      #2F7A7A;
   --mint:      #A8D5C6;
-  --coral:     #FF8A80;
-  --peach:     #FFE5D9;
-  --sky:       #E8F6FC;
+  --coral:     #E87461;
+  --peach:     #F4C2A1;
+  --sky:       #D6E8F0;
   --sky-vivid: #7EC8E3;
-  --cream:     #FBF9F6;
+  --cream:     #FAF5EF;
 
   /* Text */
   --text:           #1F1F1F;
