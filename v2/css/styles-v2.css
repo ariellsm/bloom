@@ -119,17 +119,17 @@
    VARIABLES
    ============================================================ */
 :root {
-  --forest:         #0F3D2E;
-  --teal:           #2F7A7A;
-  --mint:           #A8D5C6;
+  --forest:         #0C1A3E;
+  --teal:           #1e64f0;
+  --mint:           #B3C9F8;
   --coral:          #E87461;
   --peach:          #F4C2A1;
-  --sky:            #D6E8F0;
-  --sky-vivid:      #7EC8E3;
+  --sky:            #DCE8FD;
+  --sky-vivid:      #5A8DF3;
   --cream:          #F8F8F6;
   --text:           #1A1A1A;
   --text-secondary: #5A5A5A;
-  --border:         #E6E1DB;
+  --border:         #DDE3EF;
 
   --display: 'Feature Display', Georgia, serif;
   --xbold:   'Feature Display XBold', 'Feature Display', Georgia, serif;
@@ -184,7 +184,7 @@ h1, h2, h3, h4 {
   letter-spacing: -0.025em;
   color: var(--text);
 }
-h1 { font-size: clamp(3rem, 6.5vw, 6.5rem); }
+h1 { font-size: clamp(2.5rem, 5vw, 5rem); }
 h2 { font-size: clamp(1.625rem, 2.75vw, 2.75rem); }
 h3 { font-size: clamp(1.375rem, 2.2vw, 2rem); }
 h4 { font-size: 1.125rem; font-weight: 500; letter-spacing: -0.01em; }
@@ -337,7 +337,7 @@ strong { font-weight: 600; color: var(--text); }
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(248,248,246,0.96);
+  background: rgba(248,248,246,0.97);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
 }
@@ -591,10 +591,9 @@ strong { font-weight: 600; color: var(--text); }
    HOME — HERO
    ============================================================ */
 .home-hero {
-  /* Soft multi-stop radial gradient: cool mint corner → warm peach → cream */
   background:
-    radial-gradient(ellipse at 85% 15%, rgba(168,213,198,0.45) 0%, transparent 55%),
-    radial-gradient(ellipse at 10% 90%, rgba(244,194,161,0.35) 0%, transparent 50%),
+    radial-gradient(ellipse at 85% 15%, rgba(179,201,248,0.65) 0%, transparent 55%),
+    radial-gradient(ellipse at 10% 90%, rgba(244,194,161,0.45) 0%, transparent 50%),
     var(--cream);
   padding: var(--section-py) 0;
 }
@@ -692,9 +691,8 @@ strong { font-weight: 600; color: var(--text); }
    HOME — ABOUT TEASER
    ============================================================ */
 .home-about {
-  /* Warm gradient: cream to subtle peach edge */
   background:
-    radial-gradient(ellipse at 95% 100%, rgba(244,194,161,0.3) 0%, transparent 50%),
+    radial-gradient(ellipse at 95% 100%, rgba(244,194,161,0.45) 0%, transparent 50%),
     var(--cream);
   padding: var(--section-py) 0;
   border-top: 1px solid var(--border);
@@ -831,18 +829,17 @@ strong { font-weight: 600; color: var(--text); }
   line-height: 1.1;
 }
 .feature-card.fc-1 .fc-bg { background-color: var(--teal); }
-.feature-card.fc-2 .fc-bg { background-color: #5a9a90; }
-.feature-card.fc-3 .fc-bg { background-color: #8ab4ac; }
+.feature-card.fc-2 .fc-bg { background-color: #2d5cc8; }
+.feature-card.fc-3 .fc-bg { background-color: #4a7ee8; }
 .feature-card.fc-4 .fc-bg { background-color: var(--sky-vivid); }
 
 /* ============================================================
    HOME — SERVICES
    ============================================================ */
 .home-services {
-  /* Soft cool gradient: mint tint at top-left */
   background:
-    radial-gradient(ellipse at 0% 0%, rgba(168,213,198,0.25) 0%, transparent 55%),
-    linear-gradient(180deg, var(--cream) 0%, #edf5f1 100%);
+    radial-gradient(ellipse at 0% 0%, rgba(179,201,248,0.4) 0%, transparent 55%),
+    linear-gradient(180deg, var(--cream) 0%, #EEF2FD 100%);
   padding: var(--section-py) 0;
   border-top: 1px solid var(--border);
 }
@@ -982,8 +979,8 @@ strong { font-weight: 600; color: var(--text); }
 /* Soft warm gradient CTA */
 .cta-warm-gradient {
   background:
-    radial-gradient(ellipse at 50% 0%, rgba(244,194,161,0.6) 0%, transparent 65%),
-    radial-gradient(ellipse at 0% 100%, rgba(168,213,198,0.3) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 0%, rgba(179,201,248,0.7) 0%, transparent 65%),
+    radial-gradient(ellipse at 0% 100%, rgba(244,194,161,0.4) 0%, transparent 50%),
     var(--cream);
   border-top: 1px solid var(--border);
 }
@@ -1045,7 +1042,7 @@ strong { font-weight: 600; color: var(--text); }
 
 /* Quote card */
 .quote-card {
-  background: linear-gradient(135deg, var(--cream) 0%, var(--sky) 100%);
+  background: linear-gradient(135deg, var(--cream) 0%, #D4E4FC 100%);
   border-radius: 18px;
   padding: 3rem;
   text-align: center;
@@ -1084,7 +1081,7 @@ strong { font-weight: 600; color: var(--text); }
 .card-forest p, .card-forest li { color: rgba(255,255,255,0.75); }
 .card-sky     { background: var(--sky); border-color: transparent; }
 .card-peach   { background: #FCE8D6; border-color: transparent; }
-.card-mint-light { background: #EBF7F2; border-color: transparent; }
+.card-mint-light { background: #EBF0FE; border-color: transparent; }
 
 /* Insurance box */
 .insurance-box { border-radius: var(--r-card); padding: 2rem 2.25rem; background: var(--sky); }
@@ -1282,8 +1279,8 @@ strong { font-weight: 600; color: var(--text); }
 /* Services hero */
 .services-hero {
   background:
-    radial-gradient(ellipse at 80% 15%, rgba(168,213,198,0.4) 0%, transparent 55%),
-    radial-gradient(ellipse at 10% 85%, rgba(214,232,240,0.45) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 15%, rgba(179,201,248,0.6) 0%, transparent 55%),
+    radial-gradient(ellipse at 10% 85%, rgba(220,232,253,0.6) 0%, transparent 50%),
     var(--cream);
   padding: var(--section-py) var(--px);
   overflow: hidden;
@@ -1336,10 +1333,9 @@ strong { font-weight: 600; color: var(--text); }
 .service-hero {
   padding: var(--section-py) var(--px);
   text-align: center;
-  /* Same cream base as nav, with gentle radial gradients */
   background:
-    radial-gradient(ellipse at 75% 20%, rgba(168,213,198,0.35) 0%, transparent 55%),
-    radial-gradient(ellipse at 15% 80%, rgba(244,194,161,0.25) 0%, transparent 50%),
+    radial-gradient(ellipse at 75% 20%, rgba(179,201,248,0.55) 0%, transparent 55%),
+    radial-gradient(ellipse at 15% 80%, rgba(244,194,161,0.35) 0%, transparent 50%),
     var(--cream);
   /* Rounded bottom corners so nav + hero read as one connected block */
   border-radius: 0 0 32px 32px;
