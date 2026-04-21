@@ -207,7 +207,9 @@ strong { font-weight: 600; color: var(--text); }
   margin: 0 auto;
   padding: 0 var(--px);
 }
+.container-md { max-width: 900px; }
 .section { padding: var(--section-py) 0; }
+.section-flush { padding-top: 0; }
 .text-center { text-align: center; }
 
 .section-label {
