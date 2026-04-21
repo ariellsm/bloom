@@ -275,24 +275,41 @@ mark.sky   { background: var(--sky);   color: var(--text); }
    13. QUOTE / HIGHLIGHT CARD
    ============================================================ */
 .quote-card {
-  background: var(--sky);
-  border-radius: var(--r-card);
+  background: linear-gradient(135deg, #FBF9F6 0%, #E8F6FC 100%);
+  border-radius: 24px;
   padding: 2.5rem 3rem;
+  text-align: center;
+  position: relative;
 }
 .quote-card blockquote {
   font-family: var(--serif);
   font-size: clamp(1.1rem, 2vw, 1.45rem);
   font-style: italic;
   line-height: 1.55;
-  color: var(--text);
+  color: #1A1A1A;
+  position: relative;
+  z-index: 1;
 }
 .quote-card .quote-mark {
-  font-size: 3.5rem;
-  color: var(--mint);
-  line-height: 0.6;
   font-family: var(--serif);
-  display: block;
-  margin-bottom: 1.25rem;
+  font-size: 7rem;
+  color: rgba(126, 200, 227, 0.3);
+  line-height: 1;
+  position: absolute;
+  top: 10px;
+  left: 30px;
+}
+.quote-card mark {
+  background: #FFE5D9;
+  color: #1A1A1A;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+.quote-card mark.mint {
+  background: #E8F6FC;
+  color: var(--forest);
+  padding: 2px 8px;
+  border-radius: 4px;
 }
 
 /* ============================================================
