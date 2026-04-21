@@ -126,10 +126,10 @@
   --peach:          #F4C2A1;
   --sky:            #D6E8F0;
   --sky-vivid:      #7EC8E3;
-  --cream:          #FAF5EF;
+  --cream:          #F8F8F6;
   --text:           #1A1A1A;
   --text-secondary: #5A5A5A;
-  --border:         #E4DAD0;
+  --border:         #E6E1DB;
 
   --display: 'Feature Display', Georgia, serif;
   --xbold:   'Feature Display XBold', 'Feature Display', Georgia, serif;
@@ -138,7 +138,17 @@
 
   --max-w:      1240px;
   --px:         2rem;
-  --section-py: 6rem;
+
+  /* Spacing scale — 8px base unit */
+  --sp-1: 0.5rem;   /* 8px  — label-to-heading, tightest coupling  */
+  --sp-2: 1rem;     /* 16px — within-component tight gap            */
+  --sp-3: 1.5rem;   /* 24px — heading-to-body                       */
+  --sp-4: 2rem;     /* 32px — body-to-CTA, component bottom         */
+  --sp-5: 3rem;     /* 48px — section header-to-content             */
+  --sp-6: 4rem;     /* 64px — compact section padding               */
+  --sp-7: 6rem;     /* 96px — full section padding                  */
+
+  --section-py: var(--sp-7);
 
   --r-pill: 999px;
   --r-card: 12px;
@@ -208,7 +218,7 @@ strong { font-weight: 600; color: var(--text); }
   text-transform: uppercase;
   font-weight: 600;
   color: var(--teal);
-  margin-bottom: 0.75rem;
+  margin-bottom: var(--sp-1);
 }
 .section-label.on-dark { color: var(--mint); }
 .section-label-block { display: block; }
@@ -325,7 +335,7 @@ strong { font-weight: 600; color: var(--text); }
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(250,245,239,0.96);
+  background: rgba(248,248,246,0.96);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
 }
@@ -585,7 +595,6 @@ strong { font-weight: 600; color: var(--text); }
     radial-gradient(ellipse at 10% 90%, rgba(244,194,161,0.35) 0%, transparent 50%),
     var(--cream);
   padding: var(--section-py) 0;
-  padding-bottom: calc(var(--section-py) * 1.2);
 }
 .home-hero-inner {
   max-width: var(--max-w);
@@ -607,7 +616,7 @@ strong { font-weight: 600; color: var(--text); }
   display: flex;
   align-items: center;
   gap: 0.625rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--sp-3);
 }
 .hero-headline {
   font-family: var(--display);
@@ -616,7 +625,7 @@ strong { font-weight: 600; color: var(--text); }
   line-height: 1.0;
   letter-spacing: -0.025em;
   color: var(--text);
-  margin-bottom: 1.75rem;
+  margin-bottom: var(--sp-3);
 }
 .hero-headline em {
   font-style: italic;
@@ -628,7 +637,7 @@ strong { font-weight: 600; color: var(--text); }
   color: var(--text-secondary);
   line-height: 1.75;
   max-width: 440px;
-  margin-bottom: 2.25rem;
+  margin-bottom: var(--sp-4);
 }
 .hero-actions {
   display: flex;
@@ -724,7 +733,7 @@ strong { font-weight: 600; color: var(--text); }
   line-height: 1.15;
   letter-spacing: -0.025em;
   color: var(--text);
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--sp-3);
 }
 .about-pull-quote em {
   font-style: italic;
@@ -735,7 +744,7 @@ strong { font-weight: 600; color: var(--text); }
   font-size: 0.9375rem;
   color: var(--text-secondary);
   line-height: 1.8;
-  margin-bottom: 2rem;
+  margin-bottom: var(--sp-4);
   max-width: 520px;
 }
 .meet-link {
@@ -759,7 +768,7 @@ strong { font-weight: 600; color: var(--text); }
    ============================================================ */
 .feature-grid {
   background: var(--cream);
-  padding: 0 0 var(--section-py);
+  padding: var(--section-py) 0;
 }
 .feature-grid-inner {
   max-width: var(--max-w);
@@ -839,8 +848,8 @@ strong { font-weight: 600; color: var(--text); }
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  margin-bottom: 2.75rem;
-  gap: 2rem;
+  margin-bottom: var(--sp-5);
+  gap: var(--sp-4);
   flex-wrap: wrap;
 }
 .services-header h2 { margin: 0; }
@@ -904,8 +913,8 @@ strong { font-weight: 600; color: var(--text); }
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  margin-bottom: 3rem;
-  gap: 2rem;
+  margin-bottom: var(--sp-5);
+  gap: var(--sp-4);
   flex-wrap: wrap;
 }
 .faq-header h2 { margin: 0; }
@@ -960,9 +969,9 @@ strong { font-weight: 600; color: var(--text); }
   padding: var(--section-py) 0;
   text-align: center;
 }
-.cta-section h2 { margin-bottom: 1rem; }
+.cta-section h2 { margin-bottom: var(--sp-2); }
 .cta-section > .container > p {
-  margin-bottom: 2.5rem;
+  margin-bottom: var(--sp-5);
   max-width: 440px;
   margin-left: auto;
   margin-right: auto;
@@ -1323,7 +1332,7 @@ strong { font-weight: 600; color: var(--text); }
 /* Service sub-page heroes
    Matches nav color (cream) + rounded bottom corners = Strive-style connected header block */
 .service-hero {
-  padding: 5.5rem var(--px) 5rem;
+  padding: var(--section-py) var(--px);
   text-align: center;
   /* Same cream base as nav, with gentle radial gradients */
   background:
