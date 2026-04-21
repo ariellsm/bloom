@@ -9,13 +9,14 @@
    ============================================================ */
 :root {
   /* Brand colors */
-  --forest:  #0F3D2E;
-  --teal:    #2F7A7A;
-  --mint:    #A8D5C6;
-  --coral:   #E87461;
-  --peach:   #F4C2A1;
-  --sky:     #D6E8F0;
-  --cream:   #FAF5EF;
+  --forest:    #0C4A3E;
+  --teal:      #2F7A7A;
+  --mint:      #A8D5C6;
+  --coral:     #FF8A80;
+  --peach:     #FFE5D9;
+  --sky:       #E8F6FC;
+  --sky-vivid: #7EC8E3;
+  --cream:     #FBF9F6;
 
   /* Text */
   --text:           #1F1F1F;
@@ -196,9 +197,9 @@ mark {
   border-radius: 5px;
   font-style: inherit;
 }
-mark.coral { background: var(--coral); color: white; }
-mark.mint  { background: var(--mint);  color: var(--forest); }
-mark.sky   { background: var(--sky);   color: var(--text); }
+mark.coral { background: var(--peach);     color: var(--text); }
+mark.mint  { background: var(--sky);       color: var(--forest); }
+mark.sky   { background: var(--sky-vivid); color: white; }
 
 /* ============================================================
    10. NUMBERED STEPS
@@ -300,14 +301,6 @@ mark.sky   { background: var(--sky);   color: var(--text); }
   left: 30px;
 }
 .quote-card mark {
-  background: #FFE5D9;
-  color: #1A1A1A;
-  padding: 2px 8px;
-  border-radius: 4px;
-}
-.quote-card mark.mint {
-  background: #E8F6FC;
-  color: var(--forest);
   padding: 2px 8px;
   border-radius: 4px;
 }
