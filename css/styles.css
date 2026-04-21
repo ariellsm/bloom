@@ -89,7 +89,7 @@ strong { font-weight: 600; color: var(--text); }
   letter-spacing: 0.1em;
   text-transform: uppercase;
   font-weight: 600;
-  color: var(--teal);
+  color: var(--sky-vivid);
   margin-bottom: 0.625rem;
 }
 .section-label-block { display: block; }
@@ -241,7 +241,7 @@ mark.sky   { background: var(--sky-vivid); color: white; }
   display: flex; gap: 0.75rem;
   font-size: 0.9375rem; color: var(--text-secondary);
 }
-.arrow-list li::before { content: '→'; color: var(--coral); flex-shrink: 0; font-weight: 700; }
+.arrow-list li::before { content: '➔'; color: var(--sky-vivid); flex-shrink: 0; }
 
 .check-list { display: flex; flex-direction: column; gap: 0.625rem; }
 .check-list li {
@@ -266,11 +266,9 @@ mark.sky   { background: var(--sky-vivid); color: white; }
   display: flex; gap: 0.5rem;
   font-size: 0.875rem; color: var(--text-secondary);
 }
-.two-col-list li::before { content: '—'; color: var(--border); flex-shrink: 0; }
-.two-col-list.cream-text li,
-.two-col-list.cream-text li::before {
-  color: rgba(255,255,255,0.82);
-}
+.two-col-list li::before { content: '⬥'; color: var(--sky-vivid); flex-shrink: 0; font-size: 0.7em; }
+.two-col-list.cream-text li { color: rgba(255,255,255,0.9); }
+.two-col-list.cream-text li::before { color: var(--sky-vivid); }
 
 /* ============================================================
    13. QUOTE / HIGHLIGHT CARD
