@@ -57,6 +57,33 @@
   font-weight: 800; font-style: italic; font-display: swap;
 }
 
+/* Haffer XH SemiMono — for all small/label/UI type */
+@font-face {
+  font-family: 'Haffer XH SemiMono';
+  src: url('../assets/fonts/HafferXHSemiMono-TRIAL-Regular.woff2') format('woff2');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Haffer XH SemiMono';
+  src: url('../assets/fonts/HafferXHSemiMono-TRIAL-RegularItalic.woff2') format('woff2');
+  font-weight: 400; font-style: italic; font-display: swap;
+}
+@font-face {
+  font-family: 'Haffer XH SemiMono';
+  src: url('../assets/fonts/HafferXHSemiMono-TRIAL-Medium.woff2') format('woff2');
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Haffer XH SemiMono';
+  src: url('../assets/fonts/HafferXHSemiMono-TRIAL-SemiBold.woff2') format('woff2');
+  font-weight: 600; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Haffer XH SemiMono';
+  src: url('../assets/fonts/HafferXHSemiMono-TRIAL-Bold.woff2') format('woff2');
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+
 @font-face {
   font-family: 'Haffer XH';
   src: url('../assets/fonts/HafferXHTRIAL-Light.woff2') format('woff2');
@@ -107,6 +134,7 @@
   --display: 'Feature Display', Georgia, serif;
   --xbold:   'Feature Display XBold', 'Feature Display', Georgia, serif;
   --sans:    'Haffer XH', system-ui, sans-serif;
+  --mono:    'Haffer XH SemiMono', 'Haffer XH', system-ui, sans-serif;
 
   --max-w:      1240px;
   --px:         2rem;
@@ -174,9 +202,9 @@ strong { font-weight: 600; color: var(--text); }
 
 .section-label {
   display: inline-block;
-  font-family: var(--sans);
+  font-family: var(--mono);
   font-size: 0.65rem;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   font-weight: 600;
   color: var(--teal);
@@ -205,7 +233,7 @@ strong { font-weight: 600; color: var(--text); }
   gap: 0.4rem;
   padding: 0.35rem 1rem;
   border-radius: var(--r-pill);
-  font-family: var(--sans);
+  font-family: var(--mono);
   font-size: 0.65rem;
   letter-spacing: 0.12em;
   font-weight: 600;
@@ -224,7 +252,7 @@ strong { font-weight: 600; color: var(--text); }
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  font-family: var(--sans);
+  font-family: var(--mono);
   font-size: 0.65rem;
   letter-spacing: 0.12em;
   font-weight: 600;
@@ -254,7 +282,7 @@ strong { font-weight: 600; color: var(--text); }
   gap: 0.5rem;
   padding: 0.8rem 1.875rem;
   border-radius: var(--r-pill);
-  font-family: var(--sans);
+  font-family: var(--mono);
   font-size: 0.7rem;
   font-weight: 600;
   letter-spacing: 0.1em;
@@ -283,8 +311,8 @@ strong { font-weight: 600; color: var(--text); }
   color: white;
   text-align: center;
   padding: 0.625rem var(--px);
-  font-family: var(--sans);
-  font-size: 0.7rem;
+  font-family: var(--mono);
+  font-size: 0.68rem;
   font-weight: 500;
   letter-spacing: 0.06em;
 }
@@ -326,7 +354,7 @@ strong { font-weight: 600; color: var(--text); }
   gap: 2rem;
 }
 .nav-links a {
-  font-family: var(--sans);
+  font-family: var(--mono);
   font-size: 0.68rem;
   font-weight: 500;
   letter-spacing: 0.12em;
@@ -501,7 +529,7 @@ strong { font-weight: 600; color: var(--text); }
   margin: 1.5rem 0 2rem;
 }
 .footer-col-label {
-  font-family: var(--sans);
+  font-family: var(--mono);
   font-size: 0.62rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -584,9 +612,9 @@ strong { font-weight: 600; color: var(--text); }
 .hero-headline {
   font-family: var(--display);
   font-weight: 400;
-  font-size: clamp(3rem, 6.5vw, 6.5rem);
-  line-height: 0.97;
-  letter-spacing: -0.03em;
+  font-size: clamp(2.5rem, 4.5vw, 4.75rem);
+  line-height: 1.0;
+  letter-spacing: -0.025em;
   color: var(--text);
   margin-bottom: 1.75rem;
 }
@@ -672,11 +700,22 @@ strong { font-weight: 600; color: var(--text); }
 .about-left {
   padding-top: 0.5rem;
 }
+.about-left-index {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--teal);
+  display: block;
+  margin-bottom: 0.5rem;
+}
 .about-left-text {
   font-family: var(--sans);
-  font-size: 0.9rem;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
   color: var(--text-secondary);
-  line-height: 1.8;
+  line-height: 1.7;
+  font-weight: 400;
 }
 .about-pull-quote {
   font-family: var(--display);
@@ -703,7 +742,7 @@ strong { font-weight: 600; color: var(--text); }
   display: inline-flex;
   align-items: center;
   gap: 0.375rem;
-  font-family: var(--sans);
+  font-family: var(--mono);
   font-size: 0.7rem;
   font-weight: 600;
   letter-spacing: 0.12em;
@@ -764,7 +803,7 @@ strong { font-weight: 600; color: var(--text); }
 }
 .fc-eyebrow {
   display: inline-block;
-  font-family: var(--sans);
+  font-family: var(--mono);
   font-size: 0.6rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
